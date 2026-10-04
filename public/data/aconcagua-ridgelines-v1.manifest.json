@@ -1,0 +1,158 @@
+{
+  "id": "aconcagua-ridgelines",
+  "formatVersion": 2,
+  "bounds": [
+    -70.22453,
+    -32.76562,
+    -69.79727,
+    -32.54078
+  ],
+  "boundsNote": "40 x 25 km (16:10) centred on lon -70.0109, lat -32.6532 in the local equirectangular approximation (sphere R = 6371008.8 m)",
+  "projection": "WGS84 lon/lat, quantized linearly; render with x scaled by cos(centre latitude)",
+  "accessDate": "2026-10-04",
+  "output": {
+    "file": "aconcagua-ridgelines-v1.json",
+    "bytes": 1156683,
+    "gzipBytes": 399551,
+    "sha256": "dd100f5b4989f983f5b007c3335711fdc4c0f7d4e1a5f9d4a11ec34c7dcd2353"
+  },
+  "sources": [
+    {
+      "name": "Protomaps basemap, daily planet build (OpenStreetMap data)",
+      "url": "https://build.protomaps.com/20261004.pmtiles",
+      "build": "20261004.pmtiles",
+      "basemapVersion": "4.15.2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors; basemap tiles by Protomaps (https://protomaps.com)",
+      "accessDate": "2026-10-04",
+      "vectorZoom": 12,
+      "tiles": 20,
+      "use": "Roads, rail, waterways, water incl. ocean, parks, woods, glaciers"
+    },
+    {
+      "name": "AWS Terrain Tiles (Tilezen Joerd), Terrarium PNG",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "license": "Mixed open sources (USGS 3DEP, SRTM, GMTED2010 public domain; ETOPO1 NOAA; EU-DEM Copernicus; others)",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "attribution": "SRTM and GMTED2010 data courtesy of the U.S. Geological Survey",
+      "attributionFull": [
+        "ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;",
+        "Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;",
+        "Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;",
+        "Canada terrain data contains information licensed under the Open Government Licence – Canada;",
+        "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;",
+        "Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration",
+        "Mexico terrain data source: INEGI, Continental relief, 2016;",
+        "New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);",
+        "Norway terrain data © Kartverket;",
+        "United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;",
+        "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+      ],
+      "attributionNote": "Required attribution list from the Joerd attribution document. The short credit names the sources that cover this view; sea-floor values (ETOPO1) are clamped to 0 m.",
+      "accessDate": "2026-10-04",
+      "use": "Elevation grid"
+    }
+  ],
+  "processing": {
+    "category": "terrain",
+    "style": "ridgelines",
+    "roadClasses": [],
+    "lineClasses": [
+      "river"
+    ],
+    "polygonClasses": [
+      "water",
+      "glacier"
+    ],
+    "classMapping": "tools/data/protomaps_classes.json",
+    "quant": 65535,
+    "referenceOutputWidthPx": 3840,
+    "lineSimplifyToleranceM": 5.0,
+    "polygonSimplifyToleranceM": 8.0,
+    "minLineLengthPx": 2.0,
+    "minPolygonAreaPx2": 4.0,
+    "maxProtectedAreaFraction": 0.3,
+    "elevationClampBelowM": 0,
+    "derived": {
+      "widthM": 40000,
+      "heightM": 25001,
+      "pxM": 10.42
+    },
+    "elevation": {
+      "zoom": 12,
+      "tiles": 24,
+      "sourcePixelM": 32.2,
+      "despikedPixels": 0,
+      "despikeThresholdM": 100.0,
+      "sampling": "bilinear at cell centres",
+      "pitsFilled": 0,
+      "pitThresholdM": 300.0,
+      "columns": 600,
+      "rows": 375,
+      "rawMin": 2526.7,
+      "rawMax": 6933.9,
+      "cellM": [
+        66.7,
+        66.7
+      ]
+    },
+    "dropped": {
+      "river short": 4
+    }
+  },
+  "featureCounts": {
+    "motorway": 0,
+    "trunk": 0,
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "residential": 0,
+    "service": 0,
+    "rail": 0,
+    "river": 78,
+    "stream": 0,
+    "canal": 0,
+    "water": 5,
+    "park": 0,
+    "wood": 0,
+    "glacier": 42
+  },
+  "pointCount": 3921,
+  "largestPolygonsKm2": {
+    "water": [
+      0.068,
+      0.025,
+      0.006,
+      0.002,
+      0.001
+    ],
+    "glacier": [
+      14.779,
+      8.277,
+      6.907,
+      3.941,
+      3.534
+    ]
+  },
+  "label": {
+    "name": "Aconcagua",
+    "nativeName": "Aconcagua",
+    "region": "Argentina",
+    "regionCode": "AR",
+    "source": "views/catalog.json",
+    "nativeLang": "es",
+    "summit": {
+      "name": "Aconcagua",
+      "elevationM": 6961
+    }
+  },
+  "limitations": [
+    "OSM data is a snapshot of the Protomaps build named above.",
+    "Geometry comes from zoom-level vector tiles, merged across tiles and simplified for about 3840 px across the view; not for navigation or analysis.",
+    "Tunnels and bridges are not distinguished; footways, paths, and tracks are not included.",
+    "Elevation is bilinearly resampled from Web Mercator tiles to a coarse lon/lat grid; values below 0 m are clamped to 0 m."
+  ],
+  "requiredAttribution": "© OpenStreetMap contributors · Protomaps · Elevation: SRTM and GMTED2010 data courtesy of the U.S. Geological Survey"
+}

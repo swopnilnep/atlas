@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sources · Atlas</title>
+  <meta name="description" content="Geographic data sources, licenses, attribution, and preparation details for Atlas.">
+  <link rel="canonical" href="https://atlas.swopnil.com/sources/">
+  <!--atlas:head-->
+</head><body>
+<!--atlas:header-->
+<main class="site-main container">
+  <section class="page-head"><h1>Sources</h1><p class="lede">Every geographic input is prepared ahead of time and credited here, on each piece's page, and in the metadata of every downloaded PNG.</p></section>
+  <section class="source-list">
+    <article class="source"><h2>OpenStreetMap, via Protomaps</h2><p>Roads, rail, rivers, lakes, the sea, parks, woods, and glaciers come from OpenStreetMap, read from the <a href="https://docs.protomaps.com/basemaps/downloads">Protomaps daily planet build</a> (vector tiles in one PMTiles file). OpenStreetMap data is licensed under the <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Data Commons Open Database License 1.0</a>. Required attribution: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p></article>
+    <article class="source"><h2>Elevation</h2><p>Elevation comes from the AWS Terrain Tiles (Tilezen Joerd, Terrarium encoding), which combine several open sources. Credit as listed in the <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md">Joerd attribution document</a>: United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey. Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers. Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration. Each manifest names the sources for its area and carries the full list.</p></article>
+    <article class="source"><h2>Attribution on images</h2><p>The images themselves carry no credit line. Attribution for a downloaded PNG is in its metadata (tEXt Source and Copyright chunks) and on the piece's page next to the download button and here. This is how the ODbL attribution requirement is met for downloads.</p></article>
+    <article class="source"><h2>How each piece is prepared</h2><p>Each piece is a 16:10 rectangle around a point, listed in one catalog. Vector tiles covering it are fetched (zoom 14 for cities, so every residential street is included), merged across tile edges, clipped, simplified to under a pixel at 3840 px wide, and stored as small integer coordinates. Elevation is resampled to a grid of about 512 to 600 cells across. The data is for artwork, not analysis or navigation: tunnels and bridges are not distinguished, and shapes cut by the frame have straight edges.</p>
+      <p>Manifests (bounds, source build, access dates, processing, checksum, required attribution):</p>
+      <!--atlas:manifest-list-->
+      <p>The preparation scripts are in <a href="https://github.com/swopnilnep/atlas/tree/main/tools/data">tools/data</a>.</p></article>
+  </section>
+</main>
+<!--atlas:footer-->
+</body></html>

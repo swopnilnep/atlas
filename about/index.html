@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Atlas</title>
+  <meta name="description" content="Why Atlas exists and how its images are made from open geographic data.">
+  <link rel="canonical" href="https://atlas.swopnil.com/about/">
+  <!--atlas:head-->
+</head><body>
+<!--atlas:header-->
+<main class="site-main container">
+  <section class="page-head"><h1>About Atlas</h1><p class="lede">Atlas makes images of real places from open geographic data. It is a set of drawing rules, not an AI image generator and not a navigation map.</p></section>
+  <article class="prose">
+    <h2>Why</h2>
+    <p>The shape of a city usually comes from the ground under it. Rivers set where bridges go, hills bend the streets, and lakes and coastlines stop the grid. Atlas is a way of looking at that: each image puts the natural features first and draws the roads on top of them.</p>
+    <h2>How an image is made</h2>
+    <p>Each view has a fixed extent, a list of layers, and a palette. Elevation comes from the AWS Terrain Tiles (USGS 3DEP, SRTM, and other open sources). Water, parks, glaciers, and roads come from OpenStreetMap. The data is clipped and simplified ahead of time, then drawn in a fixed order: terrain, parks, water, roads, and a small label. Mountains can also be drawn as stacked ridgeline profiles. The same input always gives the same image.</p>
+    <h2>Scale</h2>
+    <p>Cities are drawn from about 15 to 50 km across, depending on what shapes them. At that size, a river valley or an escarpment is large enough to read in the image. Closer crops, such as a single downtown, mostly show a street grid that looks like any other.</p>
+    <h2>What is left out</h2>
+    <p>Buildings, labels for streets and neighborhoods, and points of interest are left out. Small service roads are dropped at metro scale because they turn into noise. The images are not accurate enough for navigation or analysis.</p>
+    <h2>Your copy</h2>
+    <p>On the <a href="/create/">Create</a> page, the image is drawn in your browser from the same data and rules. Nothing is uploaded, there are no accounts, and the site has no analytics. The code is open source under the MIT License. The license for the artwork has not been chosen yet; the data licenses on the <a href="/sources/">Sources</a> page still apply.</p>
+  </article>
+</main>
+<!--atlas:footer-->
+</body></html>

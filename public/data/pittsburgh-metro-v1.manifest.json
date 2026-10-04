@@ -1,0 +1,166 @@
+{
+  "id": "pittsburgh-metro",
+  "formatVersion": 2,
+  "bounds": [
+    -80.1377,
+    40.36974,
+    -79.8423,
+    40.51026
+  ],
+  "boundsNote": "25 x 15.625 km (16:10) centred on lon -79.99, lat 40.44 in the local equirectangular approximation (sphere R = 6371008.8 m)",
+  "projection": "WGS84 lon/lat, quantized linearly; render with x scaled by cos(centre latitude)",
+  "accessDate": "2026-10-04",
+  "output": {
+    "file": "pittsburgh-metro-v1.json",
+    "bytes": 2019826,
+    "gzipBytes": 702426,
+    "sha256": "c07b7b62036b35505c95bb3a4f93a766b4480941d6115af026b4f29297823e60"
+  },
+  "sources": [
+    {
+      "name": "Protomaps basemap, daily planet build (OpenStreetMap data)",
+      "url": "https://build.protomaps.com/20261004.pmtiles",
+      "build": "20261004.pmtiles",
+      "basemapVersion": "4.15.2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors; basemap tiles by Protomaps (https://protomaps.com)",
+      "accessDate": "2026-10-04",
+      "vectorZoom": 14,
+      "tiles": 135,
+      "use": "Roads, rail, waterways, water incl. ocean, parks, woods, glaciers"
+    },
+    {
+      "name": "AWS Terrain Tiles (Tilezen Joerd), Terrarium PNG",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "license": "Mixed open sources (USGS 3DEP, SRTM, GMTED2010 public domain; ETOPO1 NOAA; EU-DEM Copernicus; others)",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "attribution": "3DEP data courtesy of the U.S. Geological Survey",
+      "attributionFull": [
+        "ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;",
+        "Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;",
+        "Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;",
+        "Canada terrain data contains information licensed under the Open Government Licence – Canada;",
+        "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;",
+        "Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration",
+        "Mexico terrain data source: INEGI, Continental relief, 2016;",
+        "New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);",
+        "Norway terrain data © Kartverket;",
+        "United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;",
+        "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+      ],
+      "attributionNote": "Required attribution list from the Joerd attribution document. The short credit names the sources that cover this view; sea-floor values (ETOPO1) are clamped to 0 m.",
+      "accessDate": "2026-10-04",
+      "use": "Elevation grid"
+    }
+  ],
+  "processing": {
+    "category": "cities",
+    "style": "urban-relief",
+    "roadClasses": [
+      "motorway",
+      "trunk",
+      "primary",
+      "secondary",
+      "tertiary",
+      "residential",
+      "service"
+    ],
+    "lineClasses": [
+      "rail",
+      "river",
+      "stream",
+      "canal"
+    ],
+    "polygonClasses": [
+      "water",
+      "park",
+      "wood"
+    ],
+    "classMapping": "tools/data/protomaps_classes.json",
+    "quant": 65535,
+    "referenceOutputWidthPx": 3840,
+    "lineSimplifyToleranceM": 5.0,
+    "polygonSimplifyToleranceM": 8.0,
+    "minLineLengthPx": 2.0,
+    "minPolygonAreaPx2": 4.0,
+    "maxProtectedAreaFraction": 0.3,
+    "elevationClampBelowM": 0,
+    "derived": {
+      "widthM": 24999,
+      "heightM": 15625,
+      "pxM": 6.51
+    },
+    "elevation": {
+      "zoom": 13,
+      "tiles": 40,
+      "sourcePixelM": 14.5,
+      "despikedPixels": 0,
+      "despikeThresholdM": 100.0,
+      "sampling": "bilinear at cell centres",
+      "columns": 512,
+      "rows": 320,
+      "rawMin": 211.7,
+      "rawMax": 413.9,
+      "cellM": [
+        48.8,
+        48.8
+      ]
+    },
+    "dropped": {
+      "motorway short": 6,
+      "primary short": 5,
+      "secondary short": 7,
+      "tertiary short": 9,
+      "residential short": 136,
+      "service short": 1766,
+      "rail short": 43,
+      "stream short": 17,
+      "canal short": 4
+    }
+  },
+  "featureCounts": {
+    "motorway": 515,
+    "trunk": 147,
+    "primary": 451,
+    "secondary": 334,
+    "tertiary": 600,
+    "residential": 9165,
+    "service": 20923,
+    "rail": 1329,
+    "river": 81,
+    "stream": 422,
+    "canal": 13,
+    "water": 122,
+    "park": 631,
+    "wood": 1316,
+    "glacier": 0
+  },
+  "pointCount": 146233,
+  "largestPolygonsKm2": {
+    "water": [
+      16.985,
+      0.077,
+      0.066,
+      0.05,
+      0.044
+    ],
+    "glacier": []
+  },
+  "label": {
+    "name": "Pittsburgh",
+    "nativeName": "Pittsburgh",
+    "region": "Pennsylvania",
+    "regionCode": "PA",
+    "source": "views/catalog.json",
+    "nativeLang": "en"
+  },
+  "limitations": [
+    "OSM data is a snapshot of the Protomaps build named above.",
+    "Geometry comes from zoom-level vector tiles, merged across tiles and simplified for about 3840 px across the view; not for navigation or analysis.",
+    "Tunnels and bridges are not distinguished; footways, paths, and tracks are not included.",
+    "Elevation is bilinearly resampled from Web Mercator tiles to a coarse lon/lat grid; values below 0 m are clamped to 0 m."
+  ],
+  "requiredAttribution": "© OpenStreetMap contributors · Protomaps · Elevation: 3DEP data courtesy of the U.S. Geological Survey"
+}

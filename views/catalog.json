@@ -1,0 +1,1861 @@
+{
+  "comment": "Every Atlas piece. Bounds are computed at 16:10 from center [lon, lat] and widthKm (tools/data/catalog.py, tools/lib/catalog.mjs). Optional: nativeName (the in-image title, in the place's own script) and nativeLang (BCP-47); peak {name, elevationM} for the ridgelines annotation; views/notes/<id>.json adds subtitle and notes.",
+  "pieces": [
+    {
+      "id": "austin-metro",
+      "place": "austin",
+      "view": "metro",
+      "title": "Austin",
+      "nativeName": "Austin",
+      "nativeLang": "en",
+      "region": "Texas",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -97.75,
+        30.3
+      ],
+      "widthKm": 50,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Colorado River and its Highland Lakes, where the Hill Country meets the Blackland Prairie."
+    },
+    {
+      "id": "seattle-metro",
+      "place": "seattle",
+      "view": "metro",
+      "title": "Seattle",
+      "nativeName": "Seattle",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -122.32,
+        47.61
+      ],
+      "widthKm": 45,
+      "defaultPalette": "ink-and-river",
+      "summary": "A city on the ridges between Puget Sound and Lake Washington."
+    },
+    {
+      "id": "san-francisco-metro",
+      "place": "san-francisco",
+      "view": "metro",
+      "title": "San Francisco",
+      "nativeName": "San Francisco",
+      "nativeLang": "en",
+      "region": "California",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -122.36,
+        37.8
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "The hilly tip of the peninsula, the Golden Gate, and the bay with Oakland and Berkeley across it."
+    },
+    {
+      "id": "new-york-metro",
+      "place": "new-york",
+      "view": "metro",
+      "title": "New York",
+      "nativeName": "New York",
+      "nativeLang": "en",
+      "region": "New York",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -73.98,
+        40.72
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "Manhattan between the Hudson and East rivers, with Brooklyn, Queens, and the Upper Bay."
+    },
+    {
+      "id": "pittsburgh-metro",
+      "place": "pittsburgh",
+      "view": "metro",
+      "title": "Pittsburgh",
+      "nativeName": "Pittsburgh",
+      "nativeLang": "en",
+      "region": "Pennsylvania",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -79.99,
+        40.44
+      ],
+      "widthKm": 25,
+      "defaultPalette": "paper",
+      "summary": "The Allegheny and Monongahela rivers join at the Point to form the Ohio."
+    },
+    {
+      "id": "new-orleans-metro",
+      "place": "new-orleans",
+      "view": "metro",
+      "title": "New Orleans",
+      "nativeName": "New Orleans",
+      "nativeLang": "en",
+      "region": "Louisiana",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -90.07,
+        30
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "The city in a bend of the Mississippi, with Lake Pontchartrain to the north."
+    },
+    {
+      "id": "hong-kong-metro",
+      "place": "hong-kong",
+      "view": "metro",
+      "title": "Hong Kong",
+      "nativeName": "香港",
+      "nativeLang": "zh-Hant-HK",
+      "region": "China",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        114.17,
+        22.3
+      ],
+      "widthKm": 35,
+      "defaultPalette": "night-river",
+      "summary": "Victoria Harbour between Kowloon and the steep slopes of Hong Kong Island."
+    },
+    {
+      "id": "chongqing-metro",
+      "place": "chongqing",
+      "view": "metro",
+      "title": "Chongqing",
+      "nativeName": "重庆",
+      "nativeLang": "zh-Hans",
+      "region": "China",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        106.55,
+        29.56
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "The Jialing River meets the Yangtze between long parallel ridges."
+    },
+    {
+      "id": "guilin-metro",
+      "place": "guilin",
+      "view": "metro",
+      "title": "Guilin",
+      "nativeName": "桂林",
+      "nativeLang": "zh-Hans",
+      "region": "China",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        110.3,
+        25.25
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Li River winds through the city among isolated karst hills."
+    },
+    {
+      "id": "kathmandu-metro",
+      "place": "kathmandu",
+      "view": "metro",
+      "title": "Kathmandu",
+      "nativeName": "काठमाडौं",
+      "nativeLang": "ne",
+      "region": "Nepal",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        85.33,
+        27.69
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "A city filling a bowl-shaped valley ringed by hills, drained by the Bagmati River."
+    },
+    {
+      "id": "pokhara-metro",
+      "place": "pokhara",
+      "view": "metro",
+      "title": "Pokhara",
+      "nativeName": "पोखरा",
+      "nativeLang": "ne",
+      "region": "Nepal",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        83.97,
+        28.22
+      ],
+      "widthKm": 25,
+      "defaultPalette": "ink-and-river",
+      "summary": "Phewa Lake and the deep gorge of the Seti Gandaki below the Annapurna range."
+    },
+    {
+      "id": "mumbai-metro",
+      "place": "mumbai",
+      "view": "metro",
+      "title": "Mumbai",
+      "nativeName": "मुंबई",
+      "nativeLang": "mr",
+      "region": "India",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        72.89,
+        19.01
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "A peninsula of joined islands between the Arabian Sea and Thane Creek."
+    },
+    {
+      "id": "varanasi-metro",
+      "place": "varanasi",
+      "view": "metro",
+      "title": "Varanasi",
+      "nativeName": "वाराणसी",
+      "nativeLang": "hi",
+      "region": "India",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        83,
+        25.31
+      ],
+      "widthKm": 15,
+      "defaultPalette": "ink-and-river",
+      "summary": "The old city lines the west bank of a crescent bend of the Ganges."
+    },
+    {
+      "id": "srinagar-metro",
+      "place": "srinagar",
+      "view": "metro",
+      "title": "Srinagar",
+      "nativeName": "سرینگر",
+      "nativeLang": "ur",
+      "region": "India",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        74.83,
+        34.09
+      ],
+      "widthKm": 20,
+      "defaultPalette": "paper",
+      "summary": "Dal Lake and the Jhelum River in the Kashmir Valley."
+    },
+    {
+      "id": "venice-metro",
+      "place": "venice",
+      "view": "metro",
+      "title": "Venice",
+      "nativeName": "Venezia",
+      "nativeLang": "it",
+      "region": "Italy",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        12.34,
+        45.44
+      ],
+      "widthKm": 15,
+      "defaultPalette": "ink-and-river",
+      "summary": "Islands of the old city in a shallow lagoon, linked to the mainland by a causeway."
+    },
+    {
+      "id": "amsterdam-metro",
+      "place": "amsterdam",
+      "view": "metro",
+      "title": "Amsterdam",
+      "nativeName": "Amsterdam",
+      "nativeLang": "nl",
+      "region": "Netherlands",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        4.9,
+        52.37
+      ],
+      "widthKm": 20,
+      "defaultPalette": "paper",
+      "summary": "Rings of canals around the old centre, on the south bank of the IJ."
+    },
+    {
+      "id": "istanbul-metro",
+      "place": "istanbul",
+      "view": "metro",
+      "title": "Istanbul",
+      "nativeName": "İstanbul",
+      "nativeLang": "tr",
+      "region": "Türkiye",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        29.02,
+        41.06
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Bosphorus between Europe and Asia, and the Golden Horn."
+    },
+    {
+      "id": "lisbon-metro",
+      "place": "lisbon",
+      "view": "metro",
+      "title": "Lisbon",
+      "nativeName": "Lisboa",
+      "nativeLang": "pt",
+      "region": "Portugal",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -9.12,
+        38.7
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "Hills on the north shore of the Tagus estuary."
+    },
+    {
+      "id": "budapest-metro",
+      "place": "budapest",
+      "view": "metro",
+      "title": "Budapest",
+      "nativeName": "Budapest",
+      "nativeLang": "hu",
+      "region": "Hungary",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        19.04,
+        47.5
+      ],
+      "widthKm": 25,
+      "defaultPalette": "night-river",
+      "summary": "The Danube between the Buda hills and the flat plain of Pest."
+    },
+    {
+      "id": "rio-de-janeiro-metro",
+      "place": "rio-de-janeiro",
+      "view": "metro",
+      "title": "Rio de Janeiro",
+      "nativeName": "Rio de Janeiro",
+      "nativeLang": "pt-BR",
+      "region": "Brazil",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -43.2,
+        -22.9
+      ],
+      "widthKm": 40,
+      "defaultPalette": "night-river",
+      "summary": "Guanabara Bay and the granite peaks of Tijuca, Corcovado, and Sugarloaf."
+    },
+    {
+      "id": "cape-town-metro",
+      "place": "cape-town",
+      "view": "metro",
+      "title": "Cape Town",
+      "nativeName": "Cape Town",
+      "nativeLang": "en",
+      "region": "South Africa",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        18.45,
+        -34
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "Table Mountain above Table Bay, with False Bay to the south-east."
+    },
+    {
+      "id": "everest-ridgelines",
+      "place": "everest",
+      "view": "ridgelines",
+      "title": "Mount Everest",
+      "nativeName": "ཇོ་མོ་གླང་མ",
+      "nativeLang": "bo",
+      "region": "Nepal/Tibet",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        86.925,
+        27.988
+      ],
+      "widthKm": 30,
+      "defaultPalette": "black",
+      "peak": {
+        "name": "Everest",
+        "elevationM": 8849
+      },
+      "summary": "The highest mountain on Earth, with Lhotse and Nuptse, on the Nepal–Tibet border."
+    },
+    {
+      "id": "everest-contours",
+      "place": "everest",
+      "view": "contours",
+      "title": "Mount Everest",
+      "nativeName": "ཇོ་མོ་གླང་མ",
+      "nativeLang": "bo",
+      "region": "Nepal/Tibet",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        86.925,
+        27.988
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "Filled elevation bands around Everest, Lhotse, and Nuptse, with the Khumbu glaciers left empty."
+    },
+    {
+      "id": "k2-ridgelines",
+      "place": "k2",
+      "view": "ridgelines",
+      "title": "K2",
+      "nativeName": "K2",
+      "nativeLang": "en",
+      "region": "Pakistan–China",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        76.513,
+        35.881
+      ],
+      "widthKm": 30,
+      "defaultPalette": "night-river",
+      "peak": {
+        "name": "K2",
+        "elevationM": 8611
+      },
+      "summary": "The second-highest mountain on Earth, in the Karakoram above the Baltoro and Godwin-Austen glaciers."
+    },
+    {
+      "id": "k2-contours",
+      "place": "k2",
+      "view": "contours",
+      "title": "K2",
+      "nativeName": "K2",
+      "nativeLang": "en",
+      "region": "Pakistan–China",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        76.513,
+        35.881
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "summary": "Elevation bands of the K2 massif in the Karakoram, with the Baltoro and Godwin-Austen glaciers left empty."
+    },
+    {
+      "id": "annapurna-ridgelines",
+      "place": "annapurna",
+      "view": "ridgelines",
+      "title": "Annapurna",
+      "nativeName": "अन्नपूर्ण",
+      "nativeLang": "ne",
+      "region": "Nepal",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        83.88,
+        28.55
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "peak": {
+        "name": "Annapurna I",
+        "elevationM": 8091
+      },
+      "summary": "Annapurna I and Machapuchare around the Annapurna Sanctuary."
+    },
+    {
+      "id": "kangchenjunga-ridgelines",
+      "place": "kangchenjunga",
+      "view": "ridgelines",
+      "title": "Kangchenjunga",
+      "nativeName": "कञ्चनजङ्घा",
+      "nativeLang": "ne",
+      "region": "Nepal–India",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        88.147,
+        27.703
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "peak": {
+        "name": "Kangchenjunga",
+        "elevationM": 8586
+      },
+      "summary": "The third-highest mountain on Earth, on the border of Nepal and Sikkim."
+    },
+    {
+      "id": "matterhorn-ridgelines",
+      "place": "matterhorn",
+      "view": "ridgelines",
+      "title": "Matterhorn",
+      "nativeName": "Matterhorn",
+      "nativeLang": "de",
+      "region": "Switzerland–Italy",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        7.6586,
+        45.9763
+      ],
+      "widthKm": 20,
+      "defaultPalette": "black",
+      "peak": {
+        "name": "Matterhorn",
+        "elevationM": 4478
+      },
+      "summary": "The four-faced pyramid above Zermatt and Breuil-Cervinia."
+    },
+    {
+      "id": "matterhorn-contours",
+      "place": "matterhorn",
+      "view": "contours",
+      "title": "Matterhorn",
+      "nativeName": "Matterhorn",
+      "nativeLang": "de",
+      "region": "Switzerland–Italy",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        7.6586,
+        45.9763
+      ],
+      "widthKm": 20,
+      "defaultPalette": "ink-and-river",
+      "summary": "Elevation bands around the Matterhorn above Zermatt and Breuil-Cervinia, glaciers left empty."
+    },
+    {
+      "id": "mont-blanc-ridgelines",
+      "place": "mont-blanc",
+      "view": "ridgelines",
+      "title": "Mont Blanc",
+      "nativeName": "Mont Blanc",
+      "nativeLang": "fr",
+      "region": "France–Italy",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        6.8652,
+        45.8326
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "peak": {
+        "name": "Mont Blanc",
+        "elevationM": 4806
+      },
+      "summary": "The highest peak of the Alps, between Chamonix and Courmayeur."
+    },
+    {
+      "id": "mont-blanc-contours",
+      "place": "mont-blanc",
+      "view": "contours",
+      "title": "Mont Blanc",
+      "nativeName": "Mont Blanc",
+      "nativeLang": "fr",
+      "region": "France–Italy",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        6.8652,
+        45.8326
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "Elevation bands of the Mont Blanc massif between Chamonix and Courmayeur, glaciers left empty."
+    },
+    {
+      "id": "kilimanjaro-ridgelines",
+      "place": "kilimanjaro",
+      "view": "ridgelines",
+      "title": "Kilimanjaro",
+      "nativeName": "Kilimanjaro",
+      "nativeLang": "sw",
+      "region": "Tanzania",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        37.3556,
+        -3.0674
+      ],
+      "widthKm": 50,
+      "defaultPalette": "night-river",
+      "peak": {
+        "name": "Kibo",
+        "elevationM": 5895
+      },
+      "summary": "The highest mountain in Africa, a volcano rising alone from the plains."
+    },
+    {
+      "id": "kilimanjaro-contours",
+      "place": "kilimanjaro",
+      "view": "contours",
+      "title": "Kilimanjaro",
+      "nativeName": "Kilimanjaro",
+      "nativeLang": "sw",
+      "region": "Tanzania",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        37.3556,
+        -3.0674
+      ],
+      "widthKm": 50,
+      "defaultPalette": "night-river",
+      "summary": "Elevation bands of Kilimanjaro rising about 5,000 m above the plains, its summit ice left empty."
+    },
+    {
+      "id": "fuji-ridgelines",
+      "place": "fuji",
+      "view": "ridgelines",
+      "title": "Mount Fuji",
+      "nativeName": "富士山",
+      "nativeLang": "ja",
+      "region": "Japan",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        138.7274,
+        35.3606
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "peak": {
+        "name": "Fuji",
+        "elevationM": 3776
+      },
+      "summary": "The symmetrical stratovolcano, the highest mountain in Japan."
+    },
+    {
+      "id": "fuji-contours",
+      "place": "fuji",
+      "view": "contours",
+      "title": "Mount Fuji",
+      "nativeName": "富士山",
+      "nativeLang": "ja",
+      "region": "Japan",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        138.7274,
+        35.3606
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "Elevation bands of Mount Fuji, a near-symmetric stratovolcano, with the Fuji Five Lakes to the north."
+    },
+    {
+      "id": "denali-ridgelines",
+      "place": "denali",
+      "view": "ridgelines",
+      "title": "Denali",
+      "nativeName": "Denali",
+      "nativeLang": "en",
+      "region": "Alaska",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -151.0074,
+        63.0692
+      ],
+      "widthKm": 50,
+      "defaultPalette": "black",
+      "peak": {
+        "name": "Denali",
+        "elevationM": 6190
+      },
+      "summary": "The highest mountain in North America, in the Alaska Range."
+    },
+    {
+      "id": "denali-contours",
+      "place": "denali",
+      "view": "contours",
+      "title": "Denali",
+      "nativeName": "Denali",
+      "nativeLang": "en",
+      "region": "Alaska",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        -151.0074,
+        63.0692
+      ],
+      "widthKm": 50,
+      "defaultPalette": "paper",
+      "summary": "Elevation bands of Denali in the Alaska Range, with the Kahiltna and Ruth glaciers left empty."
+    },
+    {
+      "id": "yosemite-valley-ridgelines",
+      "place": "yosemite-valley",
+      "view": "ridgelines",
+      "title": "Yosemite Valley",
+      "nativeName": "Yosemite Valley",
+      "nativeLang": "en",
+      "region": "California",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -119.585,
+        37.735
+      ],
+      "widthKm": 20,
+      "defaultPalette": "paper",
+      "summary": "A glacier-carved valley between El Capitan and Half Dome."
+    },
+    {
+      "id": "aconcagua-ridgelines",
+      "place": "aconcagua",
+      "view": "ridgelines",
+      "title": "Aconcagua",
+      "nativeName": "Aconcagua",
+      "nativeLang": "es",
+      "region": "Argentina",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -70.0109,
+        -32.6532
+      ],
+      "widthKm": 40,
+      "defaultPalette": "night-river",
+      "peak": {
+        "name": "Aconcagua",
+        "elevationM": 6961
+      },
+      "summary": "The highest mountain in the Americas, in the Andes of Mendoza."
+    },
+    {
+      "id": "grand-canyon-contours",
+      "place": "grand-canyon",
+      "view": "contours",
+      "title": "Grand Canyon",
+      "nativeName": "Grand Canyon",
+      "nativeLang": "en",
+      "region": "Arizona",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        -112.1,
+        36.1
+      ],
+      "widthKm": 50,
+      "defaultPalette": "paper",
+      "summary": "Elevation bands of the Grand Canyon, with the Colorado River cut between the South and North rims."
+    },
+    {
+      "id": "grand-canyon-ridgelines",
+      "place": "grand-canyon",
+      "view": "ridgelines",
+      "title": "Grand Canyon",
+      "nativeName": "Grand Canyon",
+      "nativeLang": "en",
+      "region": "Arizona",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -112.1,
+        36.1
+      ],
+      "widthKm": 50,
+      "defaultPalette": "paper",
+      "summary": "The Colorado River's canyon between the South and North rims."
+    },
+    {
+      "id": "mount-rainier-summit",
+      "place": "mount-rainier",
+      "view": "summit",
+      "title": "Mount Rainier",
+      "nativeName": "Mount Rainier",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        -121.76,
+        46.853
+      ],
+      "widthKm": 48,
+      "defaultPalette": "night-river",
+      "summary": "Filled elevation bands around the summit, with glaciers left empty."
+    },
+    {
+      "id": "mount-rainier-ridgelines",
+      "place": "mount-rainier",
+      "view": "ridgelines",
+      "title": "Mount Rainier",
+      "nativeName": "Mount Rainier",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -121.76,
+        46.853
+      ],
+      "widthKm": 48,
+      "defaultPalette": "black",
+      "peak": {
+        "name": "Mount Rainier",
+        "elevationM": 4392
+      },
+      "summary": "The glaciated volcano above the Cascade foothills."
+    },
+    {
+      "id": "lhotse-ridgelines",
+      "place": "lhotse",
+      "view": "ridgelines",
+      "title": "Lhotse",
+      "nativeName": "ལྷོ་རྩེ",
+      "nativeLang": "bo",
+      "region": "Nepal/Tibet",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        86.9333,
+        27.9617
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "peak": {
+        "name": "Lhotse",
+        "elevationM": 8516
+      },
+      "summary": "The fourth-highest mountain, joined to Everest by the South Col."
+    },
+    {
+      "id": "makalu-ridgelines",
+      "place": "makalu",
+      "view": "ridgelines",
+      "title": "Makalu",
+      "nativeName": "Makalu",
+      "nativeLang": "en",
+      "region": "Nepal/Tibet",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        87.0889,
+        27.8897
+      ],
+      "widthKm": 30,
+      "defaultPalette": "night-river",
+      "peak": {
+        "name": "Makalu",
+        "elevationM": 8485
+      },
+      "summary": "The fifth-highest mountain, an isolated four-sided pyramid east of Everest."
+    },
+    {
+      "id": "cho-oyu-ridgelines",
+      "place": "cho-oyu",
+      "view": "ridgelines",
+      "title": "Cho Oyu",
+      "nativeName": "Cho Oyu",
+      "nativeLang": "en",
+      "region": "Nepal/Tibet",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        86.6608,
+        28.0942
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "peak": {
+        "name": "Cho Oyu",
+        "elevationM": 8188
+      },
+      "summary": "The sixth-highest mountain, west of Everest on the Nepal–Tibet border."
+    },
+    {
+      "id": "dhaulagiri-ridgelines",
+      "place": "dhaulagiri",
+      "view": "ridgelines",
+      "title": "Dhaulagiri",
+      "nativeName": "धौलागिरी",
+      "nativeLang": "ne",
+      "region": "Nepal",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        83.4933,
+        28.6967
+      ],
+      "widthKm": 35,
+      "defaultPalette": "black",
+      "peak": {
+        "name": "Dhaulagiri I",
+        "elevationM": 8167
+      },
+      "summary": "The seventh-highest mountain, across the Kali Gandaki gorge from Annapurna."
+    },
+    {
+      "id": "manaslu-ridgelines",
+      "place": "manaslu",
+      "view": "ridgelines",
+      "title": "Manaslu",
+      "nativeName": "मनास्लु",
+      "nativeLang": "ne",
+      "region": "Nepal",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        84.5597,
+        28.5497
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "peak": {
+        "name": "Manaslu",
+        "elevationM": 8163
+      },
+      "summary": "The eighth-highest mountain, in the Mansiri Himal of central Nepal."
+    },
+    {
+      "id": "mount-baker-ridgelines",
+      "place": "mount-baker",
+      "view": "ridgelines",
+      "title": "Mount Baker",
+      "nativeName": "Mount Baker",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -121.8144,
+        48.7768
+      ],
+      "widthKm": 25,
+      "defaultPalette": "ink-and-river",
+      "peak": {
+        "name": "Mount Baker",
+        "elevationM": 3286
+      },
+      "summary": "A heavily glaciated volcano in the North Cascades."
+    },
+    {
+      "id": "mount-shuksan-ridgelines",
+      "place": "mount-shuksan",
+      "view": "ridgelines",
+      "title": "Mount Shuksan",
+      "nativeName": "Mount Shuksan",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -121.5951,
+        48.8312
+      ],
+      "widthKm": 20,
+      "defaultPalette": "paper",
+      "peak": {
+        "name": "Mount Shuksan",
+        "elevationM": 2783
+      },
+      "summary": "A glaciated peak of rock, not a volcano, east of Mount Baker."
+    },
+    {
+      "id": "glacier-peak-ridgelines",
+      "place": "glacier-peak",
+      "view": "ridgelines",
+      "title": "Glacier Peak",
+      "nativeName": "Glacier Peak",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -121.1139,
+        48.1125
+      ],
+      "widthKm": 25,
+      "defaultPalette": "night-river",
+      "peak": {
+        "name": "Glacier Peak",
+        "elevationM": 3213
+      },
+      "summary": "A remote volcano deep in the North Cascades."
+    },
+    {
+      "id": "mount-st-helens-ridgelines",
+      "place": "mount-st-helens",
+      "view": "ridgelines",
+      "title": "Mount St. Helens",
+      "nativeName": "Mount St. Helens",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -122.1944,
+        46.1912
+      ],
+      "widthKm": 25,
+      "defaultPalette": "paper",
+      "peak": {
+        "name": "Mount St. Helens",
+        "elevationM": 2549
+      },
+      "summary": "The volcano whose 1980 eruption left a crater open to the north."
+    },
+    {
+      "id": "mount-st-helens-contours",
+      "place": "mount-st-helens",
+      "view": "contours",
+      "title": "Mount St. Helens",
+      "nativeName": "Mount St. Helens",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        -122.1944,
+        46.1912
+      ],
+      "widthKm": 25,
+      "defaultPalette": "black",
+      "summary": "Elevation bands of Mount St. Helens, with the 1980 crater open to the north and Spirit Lake below it."
+    },
+    {
+      "id": "mount-adams-ridgelines",
+      "place": "mount-adams",
+      "view": "ridgelines",
+      "title": "Mount Adams",
+      "nativeName": "Mount Adams",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -121.4906,
+        46.2024
+      ],
+      "widthKm": 25,
+      "defaultPalette": "black",
+      "peak": {
+        "name": "Mount Adams",
+        "elevationM": 3743
+      },
+      "summary": "Washington’s second-highest peak, a broad volcano east of St. Helens."
+    },
+    {
+      "id": "mount-hood-ridgelines",
+      "place": "mount-hood",
+      "view": "ridgelines",
+      "title": "Mount Hood",
+      "nativeName": "Mount Hood",
+      "nativeLang": "en",
+      "region": "Oregon",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -121.6959,
+        45.3736
+      ],
+      "widthKm": 25,
+      "defaultPalette": "ink-and-river",
+      "peak": {
+        "name": "Mount Hood",
+        "elevationM": 3429
+      },
+      "summary": "Oregon’s highest mountain, a glaciated volcano east of Portland."
+    },
+    {
+      "id": "mount-hood-contours",
+      "place": "mount-hood",
+      "view": "contours",
+      "title": "Mount Hood",
+      "nativeName": "Mount Hood",
+      "nativeLang": "en",
+      "region": "Oregon",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        -121.6959,
+        45.3736
+      ],
+      "widthKm": 25,
+      "defaultPalette": "ink-and-river",
+      "summary": "Elevation bands of Mount Hood, Oregon's highest peak, with its glaciers left empty."
+    },
+    {
+      "id": "mount-olympus-ridgelines",
+      "place": "mount-olympus",
+      "view": "ridgelines",
+      "title": "Mount Olympus",
+      "nativeName": "Mount Olympus",
+      "nativeLang": "en",
+      "region": "Washington",
+      "category": "terrain",
+      "style": "ridgelines",
+      "center": [
+        -123.7107,
+        47.8013
+      ],
+      "widthKm": 25,
+      "defaultPalette": "night-river",
+      "peak": {
+        "name": "Mount Olympus",
+        "elevationM": 2432
+      },
+      "summary": "The highest peak of the Olympic Mountains, ringed by glaciers."
+    },
+    {
+      "id": "toronto-metro",
+      "place": "toronto",
+      "view": "metro",
+      "title": "Toronto",
+      "nativeName": "Toronto",
+      "nativeLang": "en",
+      "region": "Canada",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -79.4,
+        43.69
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "A street grid on the north shore of Lake Ontario, cut by the Don and Humber river ravines."
+    },
+    {
+      "id": "chicago-metro",
+      "place": "chicago",
+      "view": "metro",
+      "title": "Chicago",
+      "nativeName": "Chicago",
+      "nativeLang": "en",
+      "region": "Illinois",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -87.68,
+        41.86
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "A near-perfect grid against Lake Michigan, split by the Chicago River."
+    },
+    {
+      "id": "shanghai-metro",
+      "place": "shanghai",
+      "view": "metro",
+      "title": "Shanghai",
+      "nativeName": "上海",
+      "nativeLang": "zh-Hans",
+      "region": "China",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        121.49,
+        31.23
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Huangpu River curving through the city toward the Yangtze estuary."
+    },
+    {
+      "id": "beijing-metro",
+      "place": "beijing",
+      "view": "metro",
+      "title": "Beijing",
+      "nativeName": "北京",
+      "nativeLang": "zh-Hans",
+      "region": "China",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        116.4,
+        39.91
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "Ring roads around the old city on the flat North China Plain."
+    },
+    {
+      "id": "hangzhou-metro",
+      "place": "hangzhou",
+      "view": "metro",
+      "title": "Hangzhou",
+      "nativeName": "杭州",
+      "nativeLang": "zh-Hans",
+      "region": "China",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        120.14,
+        30.25
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "summary": "West Lake ringed by hills, beside the Qiantang River."
+    },
+    {
+      "id": "tokyo-metro",
+      "place": "tokyo",
+      "view": "metro",
+      "title": "Tokyo",
+      "nativeName": "東京",
+      "nativeLang": "ja",
+      "region": "Japan",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        139.75,
+        35.68
+      ],
+      "widthKm": 45,
+      "defaultPalette": "paper",
+      "summary": "A dense street web on Tokyo Bay, crossed by the Sumida and Arakawa rivers."
+    },
+    {
+      "id": "taipei-metro",
+      "place": "taipei",
+      "view": "metro",
+      "title": "Taipei",
+      "nativeName": "臺北",
+      "nativeLang": "zh-Hant-TW",
+      "region": "Taiwan",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        121.53,
+        25.05
+      ],
+      "widthKm": 30,
+      "defaultPalette": "night-river",
+      "summary": "A basin city where the Tamsui, Keelung, and Xindian rivers meet, ringed by mountains."
+    },
+    {
+      "id": "hanoi-metro",
+      "place": "hanoi",
+      "view": "metro",
+      "title": "Hanoi",
+      "nativeName": "Hà Nội",
+      "nativeLang": "vi",
+      "region": "Vietnam",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        105.84,
+        21.03
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Red River and the lakes of the old city, including West Lake and Hoan Kiem."
+    },
+    {
+      "id": "bangkok-metro",
+      "place": "bangkok",
+      "view": "metro",
+      "title": "Bangkok",
+      "nativeName": "กรุงเทพมหานคร",
+      "nativeLang": "th",
+      "region": "Thailand",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        100.52,
+        13.74
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "The Chao Phraya River winding through a flat delta city."
+    },
+    {
+      "id": "ulaanbaatar-metro",
+      "place": "ulaanbaatar",
+      "view": "metro",
+      "title": "Ulaanbaatar",
+      "nativeName": "Улаанбаатар",
+      "nativeLang": "mn",
+      "region": "Mongolia",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        106.92,
+        47.91
+      ],
+      "widthKm": 35,
+      "defaultPalette": "paper",
+      "summary": "A city stretched along the Tuul River valley, between mountains."
+    },
+    {
+      "id": "paris-metro",
+      "place": "paris",
+      "view": "metro",
+      "title": "Paris",
+      "nativeName": "Paris",
+      "nativeLang": "fr",
+      "region": "France",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        2.35,
+        48.86
+      ],
+      "widthKm": 25,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Seine curving through a city of radial boulevards."
+    },
+    {
+      "id": "barcelona-metro",
+      "place": "barcelona",
+      "view": "metro",
+      "title": "Barcelona",
+      "nativeName": "Barcelona",
+      "nativeLang": "ca",
+      "region": "Spain",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        2.17,
+        41.4
+      ],
+      "widthKm": 25,
+      "defaultPalette": "paper",
+      "summary": "The Eixample grid between the Mediterranean and the Collserola hills."
+    },
+    {
+      "id": "berlin-metro",
+      "place": "berlin",
+      "view": "metro",
+      "title": "Berlin",
+      "nativeName": "Berlin",
+      "nativeLang": "de",
+      "region": "Germany",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        13.4,
+        52.52
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Spree, the Havel, and the lakes of a city on a flat glacial plain."
+    },
+    {
+      "id": "nairobi-metro",
+      "place": "nairobi",
+      "view": "metro",
+      "title": "Nairobi",
+      "nativeName": "Nairobi",
+      "nativeLang": "sw",
+      "region": "Kenya",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        36.82,
+        -1.29
+      ],
+      "widthKm": 35,
+      "defaultPalette": "paper",
+      "summary": "A highland city with Nairobi National Park at its southern edge."
+    },
+    {
+      "id": "quito-metro",
+      "place": "quito",
+      "view": "metro",
+      "title": "Quito",
+      "nativeName": "Quito",
+      "nativeLang": "es",
+      "region": "Ecuador",
+      "category": "cities",
+      "style": "urban-relief",
+      "center": [
+        -78.5,
+        -0.2
+      ],
+      "widthKm": 30,
+      "defaultPalette": "night-river",
+      "summary": "A long, narrow city in an Andean valley below the Pichincha volcano."
+    },
+    {
+      "id": "mississippi-delta",
+      "place": "mississippi",
+      "view": "delta",
+      "title": "Mississippi River Delta",
+      "nativeName": "Mississippi River Delta",
+      "nativeLang": "en",
+      "region": "Louisiana",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        -89.35,
+        29.15
+      ],
+      "widthKm": 110,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Birdfoot delta, where the Mississippi splits into passes into the Gulf of Mexico."
+    },
+    {
+      "id": "ganges-brahmaputra-delta",
+      "place": "ganges-brahmaputra",
+      "view": "delta",
+      "title": "Ganges–Brahmaputra Delta",
+      "nativeName": "গঙ্গা–ব্রহ্মপুত্র ব-দ্বীপ",
+      "nativeLang": "bn",
+      "region": "Bangladesh–India",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        89.3,
+        22.0
+      ],
+      "widthKm": 220,
+      "defaultPalette": "night-river",
+      "summary": "The Sundarbans, a mangrove delta of tidal channels where the Ganges and Brahmaputra reach the Bay of Bengal."
+    },
+    {
+      "id": "brahmaputra-river",
+      "place": "brahmaputra",
+      "view": "river",
+      "title": "Brahmaputra",
+      "nativeName": "ব্ৰহ্মপুত্ৰ",
+      "nativeLang": "as",
+      "region": "Assam, India",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        94.1,
+        26.9
+      ],
+      "widthKm": 120,
+      "defaultPalette": "ink-and-river",
+      "summary": "The braided Brahmaputra in Assam around Majuli, one of the largest river islands."
+    },
+    {
+      "id": "nile-delta",
+      "place": "nile",
+      "view": "delta",
+      "title": "Nile Delta",
+      "nativeName": "دلتا النيل",
+      "nativeLang": "ar",
+      "region": "Egypt",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        31.2,
+        31.15
+      ],
+      "widthKm": 140,
+      "defaultPalette": "paper",
+      "summary": "The Nile fanning out between Cairo and the Mediterranean, with its canals and coastal lakes."
+    },
+    {
+      "id": "mekong-delta",
+      "place": "mekong",
+      "view": "delta",
+      "title": "Mekong Delta",
+      "nativeName": "Đồng bằng sông Cửu Long",
+      "nativeLang": "vi",
+      "region": "Vietnam",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        105.9,
+        9.9
+      ],
+      "widthKm": 220,
+      "defaultPalette": "night-river",
+      "summary": "The Mekong reaching the South China Sea through its many distributaries in southern Vietnam."
+    },
+    {
+      "id": "lena-delta",
+      "place": "lena",
+      "view": "delta",
+      "title": "Lena Delta",
+      "nativeName": "Дельта Лены",
+      "nativeLang": "ru",
+      "region": "Russia",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        126.0,
+        72.75
+      ],
+      "widthKm": 220,
+      "defaultPalette": "ink-and-river",
+      "summary": "The Lena's Arctic delta on the Laptev Sea, a maze of channels and thaw lakes."
+    },
+    {
+      "id": "irrawaddy-delta",
+      "place": "irrawaddy",
+      "view": "delta",
+      "title": "Irrawaddy Delta",
+      "nativeName": "ဧရာဝတီ",
+      "nativeLang": "my",
+      "region": "Myanmar",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        95.4,
+        16.3
+      ],
+      "widthKm": 200,
+      "defaultPalette": "paper",
+      "summary": "The Irrawaddy's delta on the Andaman Sea, west of Yangon."
+    },
+    {
+      "id": "okavango-delta",
+      "place": "okavango",
+      "view": "delta",
+      "title": "Okavango Delta",
+      "nativeName": "Okavango Delta",
+      "nativeLang": "en",
+      "region": "Botswana",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        22.8,
+        -19.3
+      ],
+      "widthKm": 180,
+      "defaultPalette": "paper",
+      "summary": "An inland delta, where the Okavango spreads into the Kalahari and never reaches the sea."
+    },
+    {
+      "id": "yangtze-estuary",
+      "place": "yangtze",
+      "view": "estuary",
+      "title": "Yangtze Estuary",
+      "nativeName": "长江口",
+      "nativeLang": "zh-Hans",
+      "region": "China",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        121.6,
+        31.4
+      ],
+      "widthKm": 140,
+      "defaultPalette": "night-river",
+      "summary": "The mouth of the Yangtze at Shanghai, with Chongming Island in the estuary."
+    },
+    {
+      "id": "rhine-meuse-delta",
+      "place": "rhine-meuse",
+      "view": "delta",
+      "title": "Rhine–Meuse Delta",
+      "nativeName": "Rijn-Maasdelta",
+      "nativeLang": "nl",
+      "region": "Netherlands",
+      "category": "hydrology",
+      "style": "water-shapes",
+      "center": [
+        4.5,
+        51.85
+      ],
+      "widthKm": 110,
+      "defaultPalette": "ink-and-river",
+      "summary": "Where the Rhine, Meuse, and Scheldt reach the North Sea through the Dutch delta."
+    },
+    {
+      "id": "crater-lake-caldera",
+      "place": "crater-lake",
+      "view": "caldera",
+      "title": "Crater Lake",
+      "nativeName": "Crater Lake",
+      "nativeLang": "en",
+      "region": "Oregon",
+      "category": "formations",
+      "style": "contour-fields",
+      "center": [
+        -122.11,
+        42.94
+      ],
+      "widthKm": 18,
+      "defaultPalette": "ink-and-river",
+      "summary": "A lake in the caldera of Mount Mazama, which collapsed about 7,700 years ago."
+    },
+    {
+      "id": "lake-toba-caldera",
+      "place": "lake-toba",
+      "view": "caldera",
+      "title": "Lake Toba",
+      "nativeName": "Danau Toba",
+      "nativeLang": "id",
+      "region": "Sumatra, Indonesia",
+      "category": "formations",
+      "style": "water-shapes",
+      "center": [
+        98.85,
+        2.62
+      ],
+      "widthKm": 100,
+      "defaultPalette": "ink-and-river",
+      "summary": "The lake in the Toba supervolcano caldera, with Samosir island rising in its middle."
+    },
+    {
+      "id": "manicouagan-reservoir",
+      "place": "manicouagan",
+      "view": "reservoir",
+      "title": "Manicouagan Reservoir",
+      "nativeName": "Réservoir Manicouagan",
+      "nativeLang": "fr",
+      "region": "Quebec, Canada",
+      "category": "formations",
+      "style": "water-shapes",
+      "center": [
+        -68.7,
+        51.38
+      ],
+      "widthKm": 120,
+      "defaultPalette": "ink-and-river",
+      "summary": "A ring-shaped reservoir filling the eroded moat of an impact crater about 214 million years old."
+    },
+    {
+      "id": "richat-structure",
+      "place": "richat",
+      "view": "structure",
+      "title": "Richat Structure",
+      "nativeName": "Richat Structure",
+      "nativeLang": "en",
+      "region": "Mauritania",
+      "category": "formations",
+      "style": "contour-fields",
+      "center": [
+        -11.4,
+        21.12
+      ],
+      "widthKm": 50,
+      "defaultPalette": "paper",
+      "summary": "Concentric rings of eroded rock about 40 km across in the Sahara."
+    },
+    {
+      "id": "sossusvlei-dunes",
+      "place": "sossusvlei",
+      "view": "dunes",
+      "title": "Namib Sand Sea",
+      "nativeName": "Namib Sand Sea",
+      "nativeLang": "en",
+      "region": "Namibia",
+      "category": "formations",
+      "style": "contour-fields",
+      "center": [
+        15.3,
+        -24.73
+      ],
+      "widthKm": 40,
+      "defaultPalette": "paper",
+      "summary": "Star and linear dunes of the Namib around the Sossusvlei clay pan."
+    },
+    {
+      "id": "bardenas-reales-badlands",
+      "place": "bardenas-reales",
+      "view": "badlands",
+      "title": "Bardenas Reales",
+      "nativeName": "Bardenas Reales",
+      "nativeLang": "es",
+      "region": "Spain",
+      "category": "formations",
+      "style": "contour-fields",
+      "center": [
+        -1.5,
+        42.18
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "Clay and sandstone badlands carved into mesas and gullies in Navarre."
+    },
+    {
+      "id": "great-rift-valley-naivasha",
+      "place": "great-rift-valley",
+      "view": "naivasha",
+      "title": "Great Rift Valley",
+      "nativeName": "Bonde la Ufa",
+      "nativeLang": "sw",
+      "region": "Kenya",
+      "category": "formations",
+      "style": "contour-fields",
+      "center": [
+        36.4,
+        -0.8
+      ],
+      "widthKm": 150,
+      "defaultPalette": "ink-and-river",
+      "summary": "The floor of the Eastern Rift around Lake Naivasha, between the Mau and Aberdare escarpments."
+    },
+    {
+      "id": "thingvellir-rift",
+      "place": "thingvellir",
+      "view": "rift",
+      "title": "Þingvellir",
+      "nativeName": "Þingvellir",
+      "nativeLang": "is",
+      "region": "Iceland",
+      "category": "formations",
+      "style": "contour-fields",
+      "center": [
+        -21.1,
+        64.2
+      ],
+      "widthKm": 40,
+      "defaultPalette": "night-river",
+      "summary": "A rift valley where the North American and Eurasian plates pull apart, beside Þingvallavatn."
+    },
+    {
+      "id": "milford-sound-fiord",
+      "place": "milford-sound",
+      "view": "fiord",
+      "title": "Milford Sound",
+      "nativeName": "Piopiotahi",
+      "nativeLang": "mi",
+      "region": "New Zealand",
+      "category": "coasts",
+      "style": "contour-fields",
+      "center": [
+        167.87,
+        -44.62
+      ],
+      "widthKm": 30,
+      "defaultPalette": "ink-and-river",
+      "summary": "A glacial fiord running from the Tasman Sea between peaks over 1,600 m."
+    },
+    {
+      "id": "lofoten-wall",
+      "place": "lofoten",
+      "view": "wall",
+      "title": "Lofoten Wall",
+      "nativeName": "Lofotveggen",
+      "nativeLang": "nb",
+      "region": "Norway",
+      "category": "coasts",
+      "style": "contour-fields",
+      "center": [
+        13.75,
+        68.15
+      ],
+      "widthKm": 80,
+      "defaultPalette": "paper",
+      "summary": "A chain of steep mountain islands rising from the Norwegian Sea."
+    },
+    {
+      "id": "ha-long-bay-bay",
+      "place": "ha-long-bay",
+      "view": "bay",
+      "title": "Ha Long Bay",
+      "nativeName": "Vịnh Hạ Long",
+      "nativeLang": "vi",
+      "region": "Vietnam",
+      "category": "coasts",
+      "style": "water-shapes",
+      "center": [
+        107.1,
+        20.88
+      ],
+      "widthKm": 40,
+      "defaultPalette": "ink-and-river",
+      "summary": "About 1,600 limestone islands and islets in the Gulf of Tonkin."
+    },
+    {
+      "id": "hardangerfjord-fjord",
+      "place": "hardangerfjord",
+      "view": "fjord",
+      "title": "Hardangerfjord",
+      "nativeName": "Hardangerfjorden",
+      "nativeLang": "nb",
+      "region": "Norway",
+      "category": "coasts",
+      "style": "contour-fields",
+      "center": [
+        6.4,
+        60.3
+      ],
+      "widthKm": 70,
+      "defaultPalette": "paper",
+      "summary": "The middle of a 179 km fjord, with the Folgefonna ice cap to the south."
+    },
+    {
+      "id": "sam-ford-fjord-fjord",
+      "place": "sam-ford-fjord",
+      "view": "fjord",
+      "title": "Sam Ford Fjord",
+      "nativeName": "Sam Ford Fjord",
+      "nativeLang": "en",
+      "region": "Nunavut, Canada",
+      "category": "coasts",
+      "style": "contour-fields",
+      "center": [
+        -71.2,
+        70.65
+      ],
+      "widthKm": 50,
+      "defaultPalette": "night-river",
+      "summary": "A fjord on Baffin Island lined with granite walls more than 1,000 m high."
+    },
+    {
+      "id": "santorini-caldera",
+      "place": "santorini",
+      "view": "caldera",
+      "title": "Santorini",
+      "nativeName": "Σαντορίνη",
+      "nativeLang": "el",
+      "region": "Greece",
+      "category": "coasts",
+      "style": "contour-fields",
+      "center": [
+        25.4,
+        36.4
+      ],
+      "widthKm": 22,
+      "defaultPalette": "ink-and-river",
+      "summary": "A flooded volcanic caldera ringed by the islands of Thera and Therasia."
+    },
+    {
+      "id": "franz-josef-fox-glaciers",
+      "place": "franz-josef-fox",
+      "view": "glaciers",
+      "title": "Franz Josef & Fox Glaciers",
+      "nativeName": "Franz Josef & Fox Glaciers",
+      "nativeLang": "en",
+      "region": "New Zealand",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        170.12,
+        -43.5
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "Two glaciers descending from the Southern Alps toward the West Coast rainforest."
+    },
+    {
+      "id": "teide-caldera",
+      "place": "teide",
+      "view": "caldera",
+      "title": "Teide & Las Cañadas",
+      "nativeName": "Teide y Las Cañadas",
+      "nativeLang": "es",
+      "region": "Tenerife, Spain",
+      "category": "terrain",
+      "style": "contour-fields",
+      "center": [
+        -16.64,
+        28.27
+      ],
+      "widthKm": 30,
+      "defaultPalette": "paper",
+      "summary": "The Teide volcano, 3,715 m, rising from the Las Cañadas caldera."
+    }
+  ]
+}

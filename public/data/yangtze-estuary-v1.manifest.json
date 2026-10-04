@@ -1,0 +1,152 @@
+{
+  "id": "yangtze-estuary",
+  "formatVersion": 2,
+  "bounds": [
+    120.86246,
+    31.00655,
+    122.33754,
+    31.79345
+  ],
+  "boundsNote": "140 x 87.5 km (16:10) centred on lon 121.6, lat 31.4 in the local equirectangular approximation (sphere R = 6371008.8 m)",
+  "projection": "WGS84 lon/lat, quantized linearly; render with x scaled by cos(centre latitude)",
+  "accessDate": "2026-10-04",
+  "output": {
+    "file": "yangtze-estuary-v1.json",
+    "bytes": 1055262,
+    "gzipBytes": 291589,
+    "sha256": "02d075e1fb50449e620aa4309bb6c4e5ec12a05058455e5a05ea5c7b3a077436"
+  },
+  "sources": [
+    {
+      "name": "Protomaps basemap, daily planet build (OpenStreetMap data)",
+      "url": "https://build.protomaps.com/20261004.pmtiles",
+      "build": "20261004.pmtiles",
+      "basemapVersion": "4.15.2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors; basemap tiles by Protomaps (https://protomaps.com)",
+      "accessDate": "2026-10-04",
+      "vectorZoom": 11,
+      "tiles": 54,
+      "use": "Roads, rail, waterways, water incl. ocean, parks, woods, glaciers"
+    },
+    {
+      "name": "AWS Terrain Tiles (Tilezen Joerd), Terrarium PNG",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "license": "Mixed open sources (USGS 3DEP, SRTM, GMTED2010 public domain; ETOPO1 NOAA; EU-DEM Copernicus; others)",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "attribution": "SRTM and GMTED2010 data courtesy of the U.S. Geological Survey",
+      "attributionFull": [
+        "ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;",
+        "Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;",
+        "Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;",
+        "Canada terrain data contains information licensed under the Open Government Licence – Canada;",
+        "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;",
+        "Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration",
+        "Mexico terrain data source: INEGI, Continental relief, 2016;",
+        "New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);",
+        "Norway terrain data © Kartverket;",
+        "United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;",
+        "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+      ],
+      "attributionNote": "Required attribution list from the Joerd attribution document. The short credit names the sources that cover this view; sea-floor values (ETOPO1) are clamped to 0 m.",
+      "accessDate": "2026-10-04",
+      "use": "Elevation grid"
+    }
+  ],
+  "processing": {
+    "category": "deltas",
+    "style": "water-shapes",
+    "roadClasses": [],
+    "lineClasses": [
+      "river",
+      "stream",
+      "canal"
+    ],
+    "polygonClasses": [
+      "water",
+      "wetland"
+    ],
+    "classMapping": "tools/data/protomaps_classes.json",
+    "quant": 65535,
+    "referenceOutputWidthPx": 3840,
+    "lineSimplifyToleranceM": 5.0,
+    "polygonSimplifyToleranceM": 8.0,
+    "minLineLengthPx": 2.0,
+    "minPolygonAreaPx2": 4.0,
+    "maxProtectedAreaFraction": 0.3,
+    "elevationClampBelowM": 0,
+    "derived": {
+      "widthM": 140001,
+      "heightM": 87499,
+      "pxM": 36.46
+    },
+    "elevation": {
+      "zoom": 10,
+      "tiles": 20,
+      "sourcePixelM": 130.5,
+      "despikedPixels": 7,
+      "despikeThresholdM": 100.0,
+      "sampling": "bilinear at cell centres",
+      "pitsFilled": 0,
+      "pitThresholdM": 300.0,
+      "columns": 600,
+      "rows": 375,
+      "rawMin": -90.4,
+      "rawMax": 74.2,
+      "cellM": [
+        233.3,
+        233.3
+      ]
+    },
+    "dropped": {
+      "river short": 77,
+      "canal short": 537
+    }
+  },
+  "featureCounts": {
+    "motorway": 0,
+    "trunk": 0,
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "residential": 0,
+    "service": 0,
+    "rail": 0,
+    "river": 1649,
+    "stream": 0,
+    "canal": 8318,
+    "water": 1438,
+    "park": 0,
+    "wood": 0,
+    "glacier": 0,
+    "wetland": 62
+  },
+  "pointCount": 72301,
+  "largestPolygonsKm2": {
+    "water": [
+      4849.217,
+      97.561,
+      42.291,
+      7.031,
+      6.982
+    ],
+    "glacier": []
+  },
+  "label": {
+    "name": "Yangtze Estuary",
+    "nativeName": "长江口",
+    "region": "China",
+    "regionCode": "CN",
+    "source": "views/catalog.json",
+    "nativeLang": "zh-Hans"
+  },
+  "limitations": [
+    "OSM data is a snapshot of the Protomaps build named above.",
+    "Geometry comes from zoom-level vector tiles, merged across tiles and simplified for about 3840 px across the view; not for navigation or analysis.",
+    "Tunnels and bridges are not distinguished; footways, paths, and tracks are not included.",
+    "Elevation is bilinearly resampled from Web Mercator tiles to a coarse lon/lat grid; values below 0 m are clamped to 0 m."
+  ],
+  "requiredAttribution": "© OpenStreetMap contributors · Protomaps · Elevation: SRTM and GMTED2010 data courtesy of the U.S. Geological Survey"
+}

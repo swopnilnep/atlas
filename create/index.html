@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create · Atlas</title>
+  <meta name="description" content="Change the palette and layers of an Atlas map and download it as a PNG. Rendering happens in your browser.">
+  <link rel="canonical" href="https://atlas.swopnil.com/create/">
+  <!--atlas:head-->
+  <script type="module" src="/src/create.ts"></script>
+</head><body>
+<!--atlas:header-->
+<main class="site-main">
+  <section class="container page-head"><h1>Create</h1><p class="lede">Choose a view, palette, and layers, then download the image. It is drawn in your browser; nothing is uploaded.</p></section>
+  <section class="container generator">
+    <form id="generator-form" class="controls">
+      <div class="field"><label for="view">View</label><select id="view" name="view"></select></div>
+      <div class="field"><label for="palette">Palette</label><select id="palette" name="palette"><option value="ink-and-river">Ink and River</option><option value="paper">Paper</option><option value="night-river">Night River</option><option value="black">Black</option></select></div>
+      <fieldset><legend class="legend">Layers</legend><div class="checks" id="layer-checks"></div></fieldset>
+      <div class="checks single"><label><input type="checkbox" name="label" id="label-toggle" checked> Label</label></div>
+      <div class="field"><label for="output-size">Download size</label><select id="output-size" name="outputSize"><optgroup label="16:10"><option value="3840x2400">4K · 3840 × 2400</option><option value="5120x3200">5K · 5120 × 3200</option><option value="7680x4800">8K · 7680 × 4800</option></optgroup><optgroup label="16:9"><option value="3840x2160">4K · 3840 × 2160</option><option value="5120x2880">5K · 5120 × 2880</option><option value="6016x3384">6K · 6016 × 3384</option><option value="7680x4320">8K · 7680 × 4320</option></optgroup><optgroup label="Phone"><option value="1320x2868">Portrait · 1320 × 2868</option></optgroup></select></div>
+      <div class="actions"><button class="button" id="download-button" type="button" disabled>Download PNG</button><button class="button secondary" type="reset">Reset</button></div>
+      <p id="render-status" class="status" role="status" aria-live="polite">Loading map data…</p>
+      <p class="note">The preview updates as you change settings and matches the shape of the download size. Larger sizes take longer and use more memory: about 40 MB at 4K and 150 MB at 8K. On phones, stay at 4K.</p>
+      <p class="note">Map data © OpenStreetMap contributors (ODbL) · Protomaps · Elevation: AWS Terrain Tiles. The credit is written into the PNG metadata; see <a href="/sources/">sources</a>.</p>
+    </form>
+    <div class="canvas-shell"><canvas id="artwork-canvas" width="1280" height="800" aria-label="Map preview"></canvas></div>
+  </section>
+</main>
+<!--atlas:footer-->
+<!--atlas:view-catalog-->
+</body></html>

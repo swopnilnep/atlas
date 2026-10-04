@@ -1,0 +1,38 @@
+{
+  "comment": "Protomaps basemap (v4 schema) -> Atlas v2 classes. Used by tools/data/protomaps.py; checked by tests/catalog.test.ts.",
+  "roads": {
+    "layer": "roads",
+    "kinds": ["highway", "major_road", "minor_road", "other", "rail"],
+    "byKindDetail": {
+      "motorway": "motorway", "motorway_link": "motorway",
+      "trunk": "trunk", "trunk_link": "trunk",
+      "primary": "primary", "primary_link": "primary",
+      "secondary": "secondary", "secondary_link": "secondary",
+      "tertiary": "tertiary", "tertiary_link": "tertiary",
+      "residential": "residential", "unclassified": "residential", "living_street": "residential",
+      "service": "service",
+      "rail": "rail", "light_rail": "rail"
+    }
+  },
+  "waterLines": {
+    "layer": "water",
+    "byKind": { "river": "river", "stream": "stream", "canal": "canal" }
+  },
+  "waterPolygons": {
+    "layer": "water",
+    "class": "water",
+    "excludeKinds": ["swimming_pool", "fountain"],
+    "excludeKindDetails": ["swimming_pool", "fountain"]
+  },
+  "landuse": {
+    "layer": "landuse",
+    "byKind": {
+      "park": "park", "national_park": "park", "nature_reserve": "park", "protected_area": "park",
+      "garden": "park", "recreation_ground": "park",
+      "forest": "wood", "wood": "wood",
+      "glacier": "glacier",
+      "wetland": "wetland", "marsh": "wetland", "swamp": "wetland", "bog": "wetland", "mangrove": "wetland"
+    },
+    "protectedKinds": ["national_park", "nature_reserve", "protected_area"]
+  }
+}

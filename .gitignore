@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.DS_Store
+coverage/
+playwright-report/
+test-results/
+data/raw/
+*.log
+.generated/
+.venv/
+# Local planning and context notes (not published)
+docs/DESIGN.md
+docs/EXECUTION_PLAN.md
+docs/FEEDBACK_ROUND_1.md
+docs/ITERATION_2.md
+docs/POC_RESULTS.md
+docs/REFERENCES.md
+docs/palette-study/
+CLAUDE.md
+AGENTS.md

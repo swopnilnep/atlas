@@ -1,0 +1,167 @@
+{
+  "id": "seattle-metro",
+  "formatVersion": 2,
+  "bounds": [
+    -122.62014,
+    47.48353,
+    -122.01986,
+    47.73647
+  ],
+  "boundsNote": "45 x 28.125 km (16:10) centred on lon -122.32, lat 47.61 in the local equirectangular approximation (sphere R = 6371008.8 m)",
+  "projection": "WGS84 lon/lat, quantized linearly; render with x scaled by cos(centre latitude)",
+  "accessDate": "2026-10-04",
+  "output": {
+    "file": "seattle-metro-v1.json",
+    "bytes": 2187940,
+    "gzipBytes": 803478,
+    "sha256": "115d631eae4aaa4b808fd4e725715cebe2616bd2f63c416c14f1bda61eaccdd8"
+  },
+  "sources": [
+    {
+      "name": "Protomaps basemap, daily planet build (OpenStreetMap data)",
+      "url": "https://build.protomaps.com/20261004.pmtiles",
+      "build": "20261004.pmtiles",
+      "basemapVersion": "4.15.2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors; basemap tiles by Protomaps (https://protomaps.com)",
+      "accessDate": "2026-10-04",
+      "vectorZoom": 14,
+      "tiles": 504,
+      "use": "Roads, rail, waterways, water incl. ocean, parks, woods, glaciers"
+    },
+    {
+      "name": "AWS Terrain Tiles (Tilezen Joerd), Terrarium PNG",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "license": "Mixed open sources (USGS 3DEP, SRTM, GMTED2010 public domain; ETOPO1 NOAA; EU-DEM Copernicus; others)",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "attribution": "3DEP data courtesy of the U.S. Geological Survey",
+      "attributionFull": [
+        "ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;",
+        "Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;",
+        "Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;",
+        "Canada terrain data contains information licensed under the Open Government Licence – Canada;",
+        "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;",
+        "Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration",
+        "Mexico terrain data source: INEGI, Continental relief, 2016;",
+        "New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);",
+        "Norway terrain data © Kartverket;",
+        "United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;",
+        "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+      ],
+      "attributionNote": "Required attribution list from the Joerd attribution document. The short credit names the sources that cover this view; sea-floor values (ETOPO1) are clamped to 0 m.",
+      "accessDate": "2026-10-04",
+      "use": "Elevation grid"
+    }
+  ],
+  "processing": {
+    "category": "cities",
+    "style": "urban-relief",
+    "roadClasses": [
+      "motorway",
+      "trunk",
+      "primary",
+      "secondary",
+      "tertiary",
+      "residential"
+    ],
+    "lineClasses": [
+      "rail",
+      "river",
+      "stream",
+      "canal"
+    ],
+    "polygonClasses": [
+      "water",
+      "park",
+      "wood"
+    ],
+    "classMapping": "tools/data/protomaps_classes.json",
+    "quant": 65535,
+    "referenceOutputWidthPx": 3840,
+    "lineSimplifyToleranceM": 5.0,
+    "polygonSimplifyToleranceM": 8.0,
+    "minLineLengthPx": 2.0,
+    "minPolygonAreaPx2": 4.0,
+    "maxProtectedAreaFraction": 0.3,
+    "elevationClampBelowM": 0,
+    "derived": {
+      "widthM": 45000,
+      "heightM": 28126,
+      "pxM": 11.72
+    },
+    "elevation": {
+      "zoom": 11,
+      "tiles": 12,
+      "sourcePixelM": 51.5,
+      "despikedPixels": 50,
+      "despikeThresholdM": 100.0,
+      "sampling": "bilinear at cell centres",
+      "pitsFilled": 0,
+      "pitThresholdM": 300.0,
+      "columns": 512,
+      "rows": 320,
+      "rawMin": -36.5,
+      "rawMax": 617.2,
+      "cellM": [
+        87.9,
+        87.9
+      ]
+    },
+    "dropped": {
+      "motorway short": 31,
+      "trunk short": 2,
+      "primary short": 41,
+      "secondary short": 55,
+      "tertiary short": 69,
+      "residential short": 982,
+      "rail short": 129,
+      "river short": 5,
+      "stream short": 139
+    }
+  },
+  "featureCounts": {
+    "motorway": 974,
+    "trunk": 65,
+    "primary": 779,
+    "secondary": 1147,
+    "tertiary": 1626,
+    "residential": 22026,
+    "service": 0,
+    "rail": 1672,
+    "river": 54,
+    "stream": 1594,
+    "canal": 28,
+    "water": 647,
+    "park": 1754,
+    "wood": 3135,
+    "glacier": 0
+  },
+  "pointCount": 206461,
+  "largestPolygonsKm2": {
+    "water": [
+      397.786,
+      19.855,
+      1.784,
+      1.03,
+      0.565
+    ],
+    "glacier": []
+  },
+  "label": {
+    "name": "Seattle",
+    "nativeName": "Seattle",
+    "region": "Washington",
+    "regionCode": "WA",
+    "source": "views/catalog.json",
+    "nativeLang": "en"
+  },
+  "limitations": [
+    "OSM data is a snapshot of the Protomaps build named above.",
+    "Geometry comes from zoom-level vector tiles, merged across tiles and simplified for about 3840 px across the view; not for navigation or analysis.",
+    "Tunnels and bridges are not distinguished; footways, paths, and tracks are not included.",
+    "Elevation is bilinearly resampled from Web Mercator tiles to a coarse lon/lat grid; values below 0 m are clamped to 0 m."
+  ],
+  "requiredAttribution": "© OpenStreetMap contributors · Protomaps · Elevation: 3DEP data courtesy of the U.S. Geological Survey"
+}

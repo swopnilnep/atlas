@@ -1,0 +1,154 @@
+{
+  "id": "sossusvlei-dunes",
+  "formatVersion": 2,
+  "bounds": [
+    15.10197,
+    -24.84242,
+    15.49803,
+    -24.61758
+  ],
+  "boundsNote": "40 x 25 km (16:10) centred on lon 15.3, lat -24.73 in the local equirectangular approximation (sphere R = 6371008.8 m)",
+  "projection": "WGS84 lon/lat, quantized linearly; render with x scaled by cos(centre latitude)",
+  "accessDate": "2026-10-04",
+  "output": {
+    "file": "sossusvlei-dunes-v1.json",
+    "bytes": 908154,
+    "gzipBytes": 264609,
+    "sha256": "49f583137c121513e05489fd03019bc3e1c3340cc68eadd9be0933dd12d55e48"
+  },
+  "sources": [
+    {
+      "name": "Protomaps basemap, daily planet build (OpenStreetMap data)",
+      "url": "https://build.protomaps.com/20261004.pmtiles",
+      "build": "20261004.pmtiles",
+      "basemapVersion": "4.15.2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors; basemap tiles by Protomaps (https://protomaps.com)",
+      "accessDate": "2026-10-04",
+      "vectorZoom": 13,
+      "tiles": 60,
+      "use": "Roads, rail, waterways, water incl. ocean, parks, woods, glaciers"
+    },
+    {
+      "name": "AWS Terrain Tiles (Tilezen Joerd), Terrarium PNG",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "license": "Mixed open sources (USGS 3DEP, SRTM, GMTED2010 public domain; ETOPO1 NOAA; EU-DEM Copernicus; others)",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "attribution": "SRTM and GMTED2010 data courtesy of the U.S. Geological Survey",
+      "attributionFull": [
+        "ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;",
+        "Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;",
+        "Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;",
+        "Canada terrain data contains information licensed under the Open Government Licence – Canada;",
+        "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;",
+        "Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration",
+        "Mexico terrain data source: INEGI, Continental relief, 2016;",
+        "New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);",
+        "Norway terrain data © Kartverket;",
+        "United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;",
+        "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+      ],
+      "attributionNote": "Required attribution list from the Joerd attribution document. The short credit names the sources that cover this view; sea-floor values (ETOPO1) are clamped to 0 m.",
+      "accessDate": "2026-10-04",
+      "use": "Elevation grid"
+    }
+  ],
+  "processing": {
+    "category": "formations",
+    "style": "contour-fields",
+    "roadClasses": [
+      "motorway",
+      "trunk",
+      "primary",
+      "secondary",
+      "tertiary"
+    ],
+    "lineClasses": [
+      "river",
+      "stream"
+    ],
+    "polygonClasses": [
+      "water",
+      "glacier"
+    ],
+    "classMapping": "tools/data/protomaps_classes.json",
+    "quant": 65535,
+    "referenceOutputWidthPx": 3840,
+    "lineSimplifyToleranceM": 5.0,
+    "polygonSimplifyToleranceM": 8.0,
+    "minLineLengthPx": 2.0,
+    "minPolygonAreaPx2": 4.0,
+    "maxProtectedAreaFraction": 0.3,
+    "elevationClampBelowM": 0,
+    "derived": {
+      "widthM": 40001,
+      "heightM": 25001,
+      "pxM": 10.42
+    },
+    "elevation": {
+      "zoom": 12,
+      "tiles": 18,
+      "sourcePixelM": 34.7,
+      "despikedPixels": 0,
+      "despikeThresholdM": 100.0,
+      "sampling": "bilinear at cell centres",
+      "pitsFilled": 0,
+      "pitThresholdM": 300.0,
+      "columns": 600,
+      "rows": 375,
+      "rawMin": 415.5,
+      "rawMax": 1002.5,
+      "cellM": [
+        66.7,
+        66.7
+      ]
+    },
+    "dropped": {}
+  },
+  "featureCounts": {
+    "motorway": 0,
+    "trunk": 0,
+    "primary": 0,
+    "secondary": 6,
+    "tertiary": 0,
+    "residential": 0,
+    "service": 0,
+    "rail": 0,
+    "river": 6,
+    "stream": 5,
+    "canal": 0,
+    "water": 42,
+    "park": 0,
+    "wood": 0,
+    "glacier": 0,
+    "wetland": 0
+  },
+  "pointCount": 904,
+  "largestPolygonsKm2": {
+    "water": [
+      5.412,
+      2.035,
+      0.65,
+      0.609,
+      0.499
+    ],
+    "glacier": []
+  },
+  "label": {
+    "name": "Namib Sand Sea",
+    "nativeName": "Namib Sand Sea",
+    "region": "Namibia",
+    "regionCode": "NA",
+    "source": "views/catalog.json",
+    "nativeLang": "en"
+  },
+  "limitations": [
+    "OSM data is a snapshot of the Protomaps build named above.",
+    "Geometry comes from zoom-level vector tiles, merged across tiles and simplified for about 3840 px across the view; not for navigation or analysis.",
+    "Tunnels and bridges are not distinguished; footways, paths, and tracks are not included.",
+    "Elevation is bilinearly resampled from Web Mercator tiles to a coarse lon/lat grid; values below 0 m are clamped to 0 m."
+  ],
+  "requiredAttribution": "© OpenStreetMap contributors · Protomaps · Elevation: SRTM and GMTED2010 data courtesy of the U.S. Geological Survey"
+}

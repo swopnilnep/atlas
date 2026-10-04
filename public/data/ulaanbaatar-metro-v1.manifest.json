@@ -1,0 +1,166 @@
+{
+  "id": "ulaanbaatar-metro",
+  "formatVersion": 2,
+  "bounds": [
+    106.68521,
+    47.81164,
+    107.15479,
+    48.00836
+  ],
+  "boundsNote": "35 x 21.875 km (16:10) centred on lon 106.92, lat 47.91 in the local equirectangular approximation (sphere R = 6371008.8 m)",
+  "projection": "WGS84 lon/lat, quantized linearly; render with x scaled by cos(centre latitude)",
+  "accessDate": "2026-10-04",
+  "output": {
+    "file": "ulaanbaatar-metro-v1.json",
+    "bytes": 1707695,
+    "gzipBytes": 533347,
+    "sha256": "2583a90ad31f476cb50c290d22a485822d9b2f643bb04cb1cdf85a3f7e810896"
+  },
+  "sources": [
+    {
+      "name": "Protomaps basemap, daily planet build (OpenStreetMap data)",
+      "url": "https://build.protomaps.com/20261004.pmtiles",
+      "build": "20261004.pmtiles",
+      "basemapVersion": "4.15.2",
+      "license": "Open Data Commons Open Database License (ODbL) 1.0",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "copyrightUrl": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors; basemap tiles by Protomaps (https://protomaps.com)",
+      "accessDate": "2026-10-04",
+      "vectorZoom": 14,
+      "tiles": 330,
+      "use": "Roads, rail, waterways, water incl. ocean, parks, woods, glaciers"
+    },
+    {
+      "name": "AWS Terrain Tiles (Tilezen Joerd), Terrarium PNG",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "license": "Mixed open sources (USGS 3DEP, SRTM, GMTED2010 public domain; ETOPO1 NOAA; EU-DEM Copernicus; others)",
+      "licenseUrl": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+      "attribution": "SRTM and GMTED2010 data courtesy of the U.S. Geological Survey",
+      "attributionFull": [
+        "ArcticDEM terrain data DEM(s) were created from DigitalGlobe, Inc., imagery and funded under National Science Foundation awards 1043681, 1559691, and 1542736;",
+        "Australia terrain data © Commonwealth of Australia (Geoscience Australia) 2017;",
+        "Austria terrain data © offene Daten Österreichs – Digitales Geländemodell (DGM) Österreich;",
+        "Canada terrain data contains information licensed under the Open Government Licence – Canada;",
+        "Europe terrain data produced using Copernicus data and information funded by the European Union - EU-DEM layers;",
+        "Global ETOPO1 terrain data U.S. National Oceanic and Atmospheric Administration",
+        "Mexico terrain data source: INEGI, Continental relief, 2016;",
+        "New Zealand terrain data Copyright 2011 Crown copyright (c) Land Information New Zealand and the New Zealand Government (All rights reserved);",
+        "Norway terrain data © Kartverket;",
+        "United Kingdom terrain data © Environment Agency copyright and/or database right 2015. All rights reserved;",
+        "United States 3DEP (formerly NED) and global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey."
+      ],
+      "attributionNote": "Required attribution list from the Joerd attribution document. The short credit names the sources that cover this view; sea-floor values (ETOPO1) are clamped to 0 m.",
+      "accessDate": "2026-10-04",
+      "use": "Elevation grid"
+    }
+  ],
+  "processing": {
+    "category": "cities",
+    "style": "urban-relief",
+    "roadClasses": [
+      "motorway",
+      "trunk",
+      "primary",
+      "secondary",
+      "tertiary",
+      "residential"
+    ],
+    "lineClasses": [
+      "rail",
+      "river",
+      "stream",
+      "canal"
+    ],
+    "polygonClasses": [
+      "water",
+      "park",
+      "wood"
+    ],
+    "classMapping": "tools/data/protomaps_classes.json",
+    "quant": 65535,
+    "referenceOutputWidthPx": 3840,
+    "lineSimplifyToleranceM": 5.0,
+    "polygonSimplifyToleranceM": 8.0,
+    "minLineLengthPx": 2.0,
+    "minPolygonAreaPx2": 4.0,
+    "maxProtectedAreaFraction": 0.3,
+    "elevationClampBelowM": 0,
+    "derived": {
+      "widthM": 35000,
+      "heightM": 21874,
+      "pxM": 9.11
+    },
+    "elevation": {
+      "zoom": 12,
+      "tiles": 35,
+      "sourcePixelM": 25.6,
+      "despikedPixels": 0,
+      "despikeThresholdM": 100.0,
+      "sampling": "bilinear at cell centres",
+      "pitsFilled": 0,
+      "pitThresholdM": 300.0,
+      "columns": 512,
+      "rows": 320,
+      "rawMin": 1237.7,
+      "rawMax": 2205.0,
+      "cellM": [
+        68.4,
+        68.4
+      ]
+    },
+    "dropped": {
+      "trunk short": 4,
+      "primary short": 27,
+      "secondary short": 6,
+      "tertiary short": 6,
+      "residential short": 1613,
+      "rail short": 21,
+      "river short": 7,
+      "stream short": 35
+    }
+  },
+  "featureCounts": {
+    "motorway": 8,
+    "trunk": 181,
+    "primary": 194,
+    "secondary": 278,
+    "tertiary": 220,
+    "residential": 23319,
+    "service": 0,
+    "rail": 727,
+    "river": 361,
+    "stream": 1309,
+    "canal": 13,
+    "water": 152,
+    "park": 210,
+    "wood": 528,
+    "glacier": 0
+  },
+  "pointCount": 94555,
+  "largestPolygonsKm2": {
+    "water": [
+      0.375,
+      0.21,
+      0.171,
+      0.145,
+      0.107
+    ],
+    "glacier": []
+  },
+  "label": {
+    "name": "Ulaanbaatar",
+    "nativeName": "Улаанбаатар",
+    "region": "Mongolia",
+    "regionCode": "MN",
+    "source": "views/catalog.json",
+    "nativeLang": "mn"
+  },
+  "limitations": [
+    "OSM data is a snapshot of the Protomaps build named above.",
+    "Geometry comes from zoom-level vector tiles, merged across tiles and simplified for about 3840 px across the view; not for navigation or analysis.",
+    "Tunnels and bridges are not distinguished; footways, paths, and tracks are not included.",
+    "Elevation is bilinearly resampled from Web Mercator tiles to a coarse lon/lat grid; values below 0 m are clamped to 0 m."
+  ],
+  "requiredAttribution": "© OpenStreetMap contributors · Protomaps · Elevation: SRTM and GMTED2010 data courtesy of the U.S. Geological Survey"
+}

@@ -1,0 +1,11 @@
+Pillow==12.3.0
+numpy==2.5.3
+requests==2.34.2
+pmtiles==3.8.1
+mapbox-vector-tile==2.2.0
+protobuf==6.33.6  # dependency of mapbox-vector-tile
+shapely==2.1.2
+pyclipper==1.4.0  # dependency of mapbox-vector-tile
+osmium==4.3.1  # legacy Geofabrik path only (tools/data/legacy/)
+fonttools==4.60.1  # tools/data/subset_fonts.py (label font subsets)
+brotli==1.1.0  # woff2 output for fonttools
