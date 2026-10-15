@@ -1,54 +1,64 @@
 :root {
-  --bg: #fafafa;
+  color-scheme: light;
+  --bg: #ffffff;
   --panel: #f1f0ec;
   --text: #1a1a1a;
-  --muted: #706f6a;
-  --faint: #99978f;
+  --text-body: #3d3d3d;
+  --muted: #777;
+  --faint: #999;
   --accent: #5a7a5a;
-  --line: #e2e1dc;
+  --line: #e6e6e6;
   --focus: #315e9a;
   --radius: 8px;
   --btn-bg: #1f1f1d;
-  --btn-text: #fafafa;
+  --btn-text: #ffffff;
   --btn-hover: #3a3a37;
   --btn-active: #000000;
   --surface: #ffffff;
   --surface-hover: #f1f0ec;
   --border-strong: #cfcdc6;
-  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #141414;
-    --panel: #1d1d1c;
-    --text: #e6e6e3;
-    --muted: #a19f98;
-    --faint: #74726c;
-    --accent: #8bab8b;
-    --line: #30302e;
-    --focus: #9abef0;
     color-scheme: dark;
+    --bg: #000000;
+    --panel: #141414;
+    --text: #e6e6e6;
+    --text-body: #c7c7c7;
+    --muted: #9a9a9a;
+    --faint: #6a6a6a;
+    --accent: #8bab8b;
+    --line: #2c2c2c;
+    --focus: #9abef0;
+    --btn-bg: #e6e6e6;
+    --btn-text: #000000;
+    --btn-hover: #ffffff;
+    --btn-active: #c9c9c5;
+    --surface: #141414;
+    --surface-hover: #262625;
+    --border-strong: #464643;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #141414;
-  --panel: #1d1d1c;
-  --text: #e6e6e3;
-  --muted: #a19f98;
-  --faint: #74726c;
+  color-scheme: dark;
+  --bg: #000000;
+  --panel: #141414;
+  --text: #e6e6e6;
+  --text-body: #c7c7c7;
+  --muted: #9a9a9a;
+  --faint: #6a6a6a;
   --accent: #8bab8b;
-  --line: #30302e;
+  --line: #2c2c2c;
   --focus: #9abef0;
-  --btn-bg: #e6e6e3;
-  --btn-text: #141414;
+  --btn-bg: #e6e6e6;
+  --btn-text: #000000;
   --btn-hover: #ffffff;
   --btn-active: #c9c9c5;
-  --surface: #1d1d1c;
+  --surface: #141414;
   --surface-hover: #262625;
   --border-strong: #464643;
-  color-scheme: dark;
 }
 
 /* Bundled Inter (SIL OFL, public/fonts/): UI text (nav, buttons, controls, footer). */
@@ -60,7 +70,7 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { overflow-x: hidden; }
+html { overflow-x: hidden; background: var(--bg); }
 body {
   margin: 0;
   min-height: 100vh;
